@@ -4,7 +4,10 @@ pipeline{
     stages {
         stage("Running_Shell_Script") {
             steps {
-                sh './example.sh'
+                sh '''
+                    chmod +x ./example.sh
+                    ./example.sh
+                '''
             }
         }
     }
