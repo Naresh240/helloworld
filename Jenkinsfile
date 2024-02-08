@@ -2,9 +2,9 @@ pipeline{
     agent any
     
     stages {
-        stage("SCM") {
+        stage("Running_Shell_Script") {
             steps {
-                echo "Hello world...!!!!"
+                sh example.sh
             }
         }
     }
